@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="number-display" id="output">10</div> <!-- Display the random number -->
+    <div class="range-inputs">
+        <div class="input-box">
+            <label for="min">Min.</label>
+            <input type="number" id="min" value="1">
+        </div>
+        <div class="input-box">
+            <label for="max">Max.</label>
+            <input type="number" id="max" value="10">
+        </div>
+    </div>
+    <button id="generateBtn">VYGENEROVAT</button> <!-- Generate button -->
+    <div class="secret-toggle">&#x25BC;</div> <!-- Down arrow for secret menu -->
+
+    <!-- Hidden secret menu to exclude numbers -->
+    <div id="secretMenu" style="display: none;">
+        <h3>Exclude Numbers</h3>
+        <input type="text" id="excludeNumbers" placeholder="e.g., 3, 7, 15">
+        <button id="saveExclusions">Save Exclusions</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
